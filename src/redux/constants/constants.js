@@ -1,5 +1,5 @@
-const ADD_TODO = 'ADD_TODO';
-const REMOVE_TODO = 'REMOVE_TODO';
-const TOGGLE_TODO = 'TOGGLE_TODO';
+export const ADD_TODO = 'ADD_TODO';
+export const REMOVE_TODO = 'REMOVE_TODO';
+export const TOGGLE_TODO = 'TOGGLE_TODO';
 
-const ADD_USER = 'ADD_USER';
+export const ADD_USER = 'ADD_USER';

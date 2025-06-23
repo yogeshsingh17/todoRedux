@@ -6,7 +6,7 @@ const initialState = {
 }
 
 export default function todoReducer(state = initialState, action){
-    switch(action.payload){
+    switch(action.type){
         case ADD_TODO :
             return {
                 ...state,
