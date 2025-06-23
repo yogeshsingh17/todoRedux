@@ -18,10 +18,22 @@ function ToDoItem( {id, text, isCompleted} ){
 
     return (
         <>
-            <div className="todo-item">
-                <input type="checkbox" checked={isCompleted} onChange={toggleTodo} />
-                <p>{text}</p>
-                <button onClick={removeTodo}>X</button>      {/* This button will be used to delete the todo. */}
+            <div className="border border-gray-400 w-[30vw] rounded-xl shadow-lg shadow-gray-400 bg-gray-350 mb-10">
+                <div className="flex justify-between ml-4 mr-4 mt-2 mb-2">
+                    <input 
+                        type="checkbox" 
+                        checked={isCompleted} 
+                        onChange={toggleTodo}
+                    />
+                    <button
+                        onClick={removeTodo}
+                    >
+                        X                                       {/* This button will be used to delete the todo. */}
+                    </button>
+                </div>
+                <p className="ml-4 mr-4 mb-2">
+                    {text}
+                </p>
             </div>
         </>
     )

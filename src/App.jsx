@@ -5,11 +5,15 @@ import ToDoList from './components/ToDoList'
 function App() {
 
   return (
-    <>
-      <h1>Todo App</h1>
+    <div className='flex flex-col'>
+      <div className='m-4 font-bold flex justify-center text-3xl '>
+        Todo App
+      </div>
       <ToDoInput />
-      <ToDoList/>
-    </>
+      <div className='grid grid-cols-3'>
+        <ToDoList/>
+      </div>
+    </div>
   )
 }
 

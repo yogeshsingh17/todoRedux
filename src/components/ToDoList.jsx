@@ -10,20 +10,22 @@ function ToDoList(){
 
     return (
         <>
-            <div>
-                <div>
+            <div className="w-screen">
+                <div className="mb-2 ml-5">
                     ToDo List :
                 </div>
-                {todos.map(todoItem => {
-                    return (
-                        <ToDoItem 
-                            key={todoItem.id} 
-                            id={todoItem.id} 
-                            text={todoItem.text} 
-                            isCompleted={todoItem.completed}
-                        />
-                    )
-                })}
+                <div className="grid grid-cols-3 ml-5">
+                    {todos.map(todoItem => {
+                        return (
+                            <ToDoItem 
+                                key={todoItem.id} 
+                                id={todoItem.id} 
+                                text={todoItem.text} 
+                                isCompleted={todoItem.completed}
+                            />
+                        )
+                    })}
+                </div>
             </div>
         </>
     )
